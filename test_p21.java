@@ -1,0 +1,20 @@
+package ch2test;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class test_p21 {
+	public static void main(String[] args)throws IOException
+	{
+		System.out.println("請問要選哪條路線?");
+		System.out.println("請輸入整數");
+		
+		BufferedReader br=
+				new BufferedReader(new InputStreamReader(System.in));
+		String str =br.readLine();
+		int num=Integer.parseInt(str);
+		char ans =(num==1)?'A':'B';
+		System.out.println("選擇了"+ans+"路線");
+	}
+}
